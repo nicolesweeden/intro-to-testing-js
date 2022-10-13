@@ -46,8 +46,16 @@ describe("subtract", function () {
 
 */
 
+// describe("should return a string when called", function () {
+//     it("should be a defined function", function () {
+//         expect(sayHello("Alex")).toBe("Hello, Alex!");
+//     });
+// });
+//this also worked as of exercise 4, step 3 when everything should be green.
+
 describe("should return a string when called", function () {
     it("should be a defined function", function () {
-        expect(typeof sayHello()).toBe("string");
+        let input;
+        expect(sayHello(input)).toBe("Hello," + input + "!");
     });
 });
